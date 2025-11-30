@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Arial', sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+        }
+
+        .container {
+            background: white;
+            padding: 40px;
+            border-radius: 20px;
+            box-shadow: 0 20px 40px rgba(0,0,0,0.1);
+            text-align: center;
+            max-width: 500px;
+            width: 100%;
+        }
+
+        .logo {
+            font-size: 3rem;
+            margin-bottom: 20px;
+        }
+
+        h1 {
+            color: #333;
+            margin-bottom: 15px;
+            font-size: 2rem;
+        }
+
+        p {
+            color: #666;
+            line-height: 1.6;
+            margin-bottom: 25px;
+            font-size: 1.1rem;
+        }
+
+        .loading {
+            color: #667eea;
+            font-weight: bold;
+            margin: 20px 0;
+        }
+
+        .features {
+            text-align: left;
+            background: #f8f9fa;
+            padding: 20px;
+            border-radius: 10px;
+            margin: 25px 0;
+        }
+
+        .features h3 {
+            color: #333;
+            margin-bottom: 15px;
+            text-align: center;
+        }
+
+        .features ul {
+            list-style: none;
+        }
+
+        .features li {
+            padding: 8px 0;
+            color: #555;
+        }
+
+        .features li:before {
+            content: "✓ ";
+            color: #667eea;
+            font-weight: bold;
+        }
+
+        .footer {
+            margin-top: 20px;
+            color: #888;
+            font-size: 0.9rem;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="logo">🌐</div>
+        <h1>Welcome to Our Service</h1>
+        <p>Thank you for visiting our platform. We're glad to have you here!</p>
+        
+        <div class="loading" id="loading">
+            Loading amazing content...
+        </div>
+
+        <div class="features">
+            <h3>What We Offer</h3>
+            <ul>
+                <li>Premium Services</li>
+                <li>24/7 Support</li>
+                <li>Secure Platform</li>
+                <li>Fast Loading</li>
+            </ul>
+        </div>
+
+        <div class="footer">
+            &copy; 2024 Premium Services. All rights reserved.
+        </div>
+    </div>
+
+    <script>
+        // Simulate loading content
+        setTimeout(() => {
+            document.getElementById('loading').textContent = 'Content loaded successfully!';
+            document.getElementById('loading').style.color = '#28a745';
+        }, 2000);
+
+        // You can add more interactive features here
+    </script>
+</body>
+</html>

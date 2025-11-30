@@ -1,5 +1,5 @@
 ## What is this ?
-A simple project designed to track target locations just by sending the link
+- A simple project designed to track target locations just by sending the link
 without allowing the target location
 
 ### Installation and Usage 
